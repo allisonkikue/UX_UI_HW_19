@@ -1,0 +1,256 @@
+/* Body */
+body {
+    background-color: #F7F7F7;
+}
+.inline-block {
+    display: inline-block;
+}
+/* Typography */
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    font-size: 52px;
+}
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    font-size: 36px;
+}
+h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    font-size: 31px;
+}
+h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+small {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 15.1px;
+}
+/* Nav Bar */
+header {
+    height: 90px;
+    background-color: #343C32;
+    position: relative;
+    color: #F7F7F7;
+}
+.logo {
+    margin-top: 6px;
+    margin-left: 132px;
+    color:#BCC7AF;
+}
+nav {
+    padding: 1%;
+}
+.header {
+    vertical-align: middle;
+}
+header li {
+    margin-top: -44px;
+}
+.portfolio {
+    color: #7A7446;
+    margin-left: 480px;
+    margin-right: 75px;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+}
+.aboutLink {
+    margin-right: 75px;
+}
+i {
+    color: #F7F7F7;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Hero Image */
+.content{
+    display: inline-block;
+}
+.profileImg{
+    width: 431px;
+    height: 345px;
+    float: left;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 160px;
+}
+.about {
+    width: 650px;
+    float: right;
+    margin-left: 40px;
+    margin-top: 12px;
+}
+button {
+    float: right;
+    border: none;
+    background-color: #687864;
+    color: #F7F7F7;
+    padding: 0px 60px;
+}
+/* My Work Grid*/
+.workGrid {
+    display:grid;
+    grid-template-columns: 300px 600px;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-areas:
+    "caseSummaryOne caseImageOne"
+    "caseSummaryTwo caseImageTwo"
+    "caseSummaryThree caseImageThree";
+    column-gap: 20px;
+    row-gap: 40px;
+    margin-left: 160px;
+    margin-right: 20px;
+    margin-top: -40px;
+    margin-bottom: 60px;
+}
+.caseSummaryOne {
+    grid-area: caseSummaryOne;
+}
+.caseImageOne {
+    grid-area: caseImageOne
+}
+.caseSummaryTwo {
+    grid-area: caseSummaryTwo;
+}
+.caseImageTwo {
+    grid-area: caseImageTwo;
+}
+.caseSummaryThree {
+    grid-area: caseSummaryThree;
+}
+.caseImageThree {
+    grid-area: caseImageThree;
+}
+.caseHero {
+    width: 800px;
+    max-height: 400px;
+    margin-top: 40px;
+}
+.caseButton {
+    margin-right: auto;
+    width: 300px;
+}
+#caseButtonOne {
+    grid-row-end: 2;
+}
+#caseButtonTwo {
+    grid-row-end: 3;
+    margin-top: -8px;
+}
+#caseButtonThree {
+    grid-row-end: 4;
+    margin-top: 26px;
+}
+#allProjects {
+    width: 1120px;
+    left: 160px;
+    margin-top: 40px;
+}
+/* Tags (flex) */
+.tags {
+    margin-top: -30px;
+    margin-bottom: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.tag {
+    background-color: #2B7A78;
+    padding: 0px 6px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.top {
+    display: flex;
+    align-items: flex-start;
+}
+.bottom {
+    display: flex;
+    align-items: flex-end;
+}
+.left {
+    margin-left: 0px;
+}
+.right {
+    margin-right: 0px;
+}
+/* Footer */
+footer {
+    height: 90px;
+    background-color: #343C32;
+    color: #F7F7F7;
+}
+.footer {
+    padding: 2.5%; 
+}
+.social {
+    margin-top: -20px;
+    margin-left: 20px;
+}
+small {
+    float: right;
+    vertical-align: center
+}
+/* Mobile Media Query */
+@media only screen and (max-width: 600px){
+    .workGrid {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 1fr 250px 1fr 250px 1fr;
+        grid-template-areas:
+        "caseImageOne" 
+        "caseSummaryOne"
+        "caseImageTwo"
+        "caseSummaryTwo"
+        "caseImageThree"
+        "caseSummaryThree";
+        margin-bottom: 40px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .caseHero {
+        width: 500px;
+        max-height: 250px;
+    }
+    .caseButton {
+        margin-left: 50%;
+        margin-left: 0px;
+    }
+    #caseButtonOne {
+        grid-row-end: 3;
+        float: left;
+    }
+    #caseButtonTwo {
+        grid-row-end: 5;
+        float: left;
+    }
+    #caseButtonThree {
+        grid-row-end: 7;
+        float: left;
+    }
+    .tags {
+        margin-top: -30px;
+        margin-bottom: -10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    #allProjects {
+        width: 500px;
+        left: 50px;
+        margin-top: 40px;
+    }  
+}
