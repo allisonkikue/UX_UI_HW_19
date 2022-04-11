@@ -45,23 +45,23 @@ header {
     width: 100%;
     color: #F7F7F7;
     margin-left: 0px;
+    transition: all 0.2s ease;
 }
 .logo {
     margin-top: 6px;
     margin-left: 132px;
     color:#BCC7AF;
-    transition: all 0.2s;
+    transition: all 0.2s ease;
 }
 .nav {
     padding: 1%;
+    transition: all 0.2s ease;
 }
 .header {
     vertical-align: middle;
     transition: margin 0.2;
-}
-header li {
     margin-top: -44px;
-}
+} 
 .portfolio {
     color: #7A7446;
     margin-left: 480px;
@@ -81,7 +81,6 @@ i {
 /* Hero Image */
 .content{
     display: inline-block;
-    margin-top: 60px;
 }
 .profileImg{
     width: 431px;
@@ -176,7 +175,8 @@ button {
     justify-content: space-between;
 }
 .tag {
-    background-color: #2B7A78;
+    background-color: #3aafa9;
+    color: #343C32;
     padding: 0px 6px;
     border-radius: 8px;
     margin-top: 10px;
@@ -198,23 +198,16 @@ button {
 }
 /* jQuery */
 .scroll {
-    box-shadow: 0 7px 0 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 7px 0 0 rgba(0, 0, 0, .3);
+    height: 65px;
   }
-   
-  .scroll .logo {
-    padding: 10px 20px;
-    font-size: 2rem;
-  }
-   
-  .scroll nav {
-    align-items: center;
-  }
-   
-  .scroll .logo,
-  .scroll ul,
-  .scroll .toggle-menu {
-    margin: 0;
-  }
+
+.scroll .logo {
+    margin-top: -9px;
+}
+.scroll .nav {
+    height: 65px;
+}
 /* Footer */
 footer {
     height: 90px;
